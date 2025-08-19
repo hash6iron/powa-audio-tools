@@ -207,10 +207,10 @@ class SDIndex {
     FileT file = openNext(root);
     while (file) {
       if (isDirectory(file)) {
-        String name = String(fileNamePath(file));
-        LOGD("name: %s", name.c_str());
-        pushPath(fileName(file));
-        listDir(idxfile, name.c_str());
+        // String name = String(fileNamePath(file));
+        // LOGD("name: %s", name.c_str());
+        // pushPath(fileName(file));
+        // listDir(idxfile, name.c_str());
       } else {
         const char *fn = fileNamePath(file);
         if (isValidAudioFile(file)) {
