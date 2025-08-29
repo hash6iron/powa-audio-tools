@@ -69,7 +69,7 @@ typedef WiFiClient WiFiClientSecure;
 
 // Automatically include all core audio functionality
 #ifndef AUDIO_INCLUDE_CORE
-#  define AUDIO_INCLUDE_CORE true
+#  define AUDIO_INCLUDE_CORE false
 #endif
 
 // Use fixed point multiplication instead float for VolumeStream for slightly better performance on platforms without float hardware. Tested on RP2040 at 16 bit per second (still too slow for 32bit)
