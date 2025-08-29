@@ -20,6 +20,7 @@
 
 // codecs that do not require any additional library
 #include "AudioTools/AudioCodecs/CodecWAV.h"
+#include "AudioTools/AudioCodecs/CodecCopy.h"
 
 #ifdef FULL_LIBRARY
     
