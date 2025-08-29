@@ -10,6 +10,8 @@
 #define AUDIOTOOLS_MAJOR_VERSION 1
 #define AUDIOTOOLS_MIOR_VERSION 0
 
+//#define FULL_LIBRARY
+
 
 #if defined(IS_MIN_DESKTOP) 
 #  include "AudioTools/AudioLibs/Desktop/NoArduino.h"
@@ -91,7 +93,7 @@ typedef WiFiClient WiFiClientSecure;
  */
  
 #ifndef USE_AUDIO_LOGGING 
-#  define USE_AUDIO_LOGGING false
+#  define USE_AUDIO_LOGGING true
 #endif
 
 #ifndef LOG_LEVEL 

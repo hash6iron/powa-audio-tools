@@ -12,17 +12,25 @@
 #include "AudioTools/CoreAudio/ResampleStream.h"
 #include "AudioTools/CoreAudio/ResampleStreamT.h"
 #include "AudioTools/CoreAudio/StreamCopy.h"
-#include "AudioTools/CoreAudio/MusicalNotes.h"
+#ifdef FULL_LIBRARY
+    #include "AudioTools/CoreAudio/MusicalNotes.h"
+#endif
 #include "AudioTools/CoreAudio/Fade.h"
 #include "AudioTools/CoreAudio/Pipeline.h"
 #include "AudioTools/CoreAudio/AudioPlayer.h"
 #include "AudioTools/CoreAudio/AudioTimer.h"
 #include "AudioTools/CoreAudio/AudioFilter.h"
 #include "AudioTools/CoreAudio/I2SStream.h"
-#include "AudioTools/CoreAudio/AudioPWM.h"
+#ifdef FULL_LIBRARY
+    #include "AudioTools/CoreAudio/AudioPWM.h"
+#endif
 #include "AudioTools/CoreAudio/AnalogAudioStream.h"
-#include "AudioTools/CoreAudio/AudioEffects.h"
+#ifdef FULL_LIBRARY
+    #include "AudioTools/CoreAudio/AudioEffects.h"
+#endif
 #include "AudioTools/CoreAudio/AudioMetaData.h"
-#include "AudioTools/CoreAudio/AudioHttp.h"
+#ifdef FULL_LIBRARY
+    #include "AudioTools/CoreAudio/AudioHttp.h"
+#endif
 #include "AudioTools/CoreAudio/FrequencyDetector.h"
 #include "AudioTools/CoreAudio/GoerzelStream.h"
