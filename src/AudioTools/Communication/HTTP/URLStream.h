@@ -155,6 +155,14 @@ class URLStream : public AbstractURLStream {
     return isEOS() ? -1 : read_buffer[read_pos++];
   }
 
+  // ✅ MÉTODO NUEVO: Comprueba si la respuesta del servidor utiliza "Transfer-Encoding: chunked".
+  bool isChunked() {
+      if (p_http != nullptr) {
+          return p_http->isChunked();
+      }
+      return false; // Por defecto, si no hay conexión, no es chunked.
+  }
+
   virtual int peek() override {
     if (!active) return -1;
     // lazy allocation since this is rarely used
